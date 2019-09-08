@@ -1,0 +1,26 @@
+{
+    "status": "0", 
+    "result": [
+        {
+            "productId": "10001", 
+            "productName": "小米6", 
+            "prodcutPrice": "2499",
+            "prodcutdesc": "美味多重有营养，包含水果，奶油",  
+            "prodcutImg": "@/assets/images/01.jpg"
+        }, 
+        {
+            "productId": "10002", 
+            "productName": "小米笔记本", 
+            "prodcutPrice": "3999",
+            "prodcutdesc": "美味多重有营养，包含水果，奶油", 
+            "prodcutImg": "../assets/images/02.jpg"
+        }, 
+        {
+            "productId": "10003", 
+            "productName": "小米6", 
+            "prodcutPrice": "2499",
+            "prodcutdesc": "美味多重有营养，包含水果，奶油", 
+            "prodcutImg": "../assets/images/02.jpg"
+        }
+    ]
+}
