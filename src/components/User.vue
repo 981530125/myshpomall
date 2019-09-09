@@ -237,7 +237,7 @@ export default {
 	  display: flex;
 	  flex-direction: row;
 	  flex-wrap: wrap;
-	  border-bottom-1px: (#cccccc);
+	  border-bottom:1px solid #cccccc;
   }
   .phone-type li{
   	width :33.3%;
