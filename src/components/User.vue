@@ -124,7 +124,7 @@ export default {
 				this._initBScroll();
 				//右边列表的高度
 				this._initRightHeight();
-				//设置右侧最小滚动高度，防止高度无法滚到最顶部
+				//设置右侧最小滚动高度，防止高度无法滚到最顶部12313
 				this.$refs.itemList.style.paddingBottom = this.$refs.shop.clientHeight-this.lastheight+'px'
 			})
 		},
