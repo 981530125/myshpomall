@@ -12,7 +12,7 @@
       </grid-item>
       <grid-item link="/component/cell">
         <img slot="icon" src="@/assets/images/bread.png">
-        <span slot="label">现烤面包</span>
+        <span slot="label">现烤面包331313123</span>
       </grid-item>
       <grid-item link="/component/cell">
         <img slot="icon" src="@/assets/images/drink.png">
