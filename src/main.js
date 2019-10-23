@@ -3,15 +3,40 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import store from './vuex/store'
-//import './assets/iconfont/iconfont.css'
+// import './assets/iconfont/iconfont.css'
 import App from './App'
 import router from './router'
 import 'lib-flexible'
 import axios from 'axios'
-import {ViewBox, Group, Cell, XInput, Tabbar, TabbarItem, XHeader, Swiper,Grid, GridItem,Flexbox, FlexboxItem, XImg,XButton, Panel, Toast } from 'vux'
+import api from './api' // 导入api接口
+import has from './public/js/btnPermissions.js'
+import {ViewBox, 
+	Group, 
+	Cell, 
+	CellBox,
+	XInput, 
+	Tabbar, 
+	TabbarItem, 
+	XHeader, 
+	Swiper,
+	Grid, 
+	GridItem,
+	Flexbox, 
+	FlexboxItem, 
+	XImg,
+	XButton, 
+	Panel, 
+	Toast, 
+	Sticky, 
+	Tab, 
+	TabItem,
+	Rater,
+	Badge
+} from 'vux'
 
 Vue.use(Vuex)
 Vue.prototype.$axios = axios
+Vue.prototype.$api = api
 // 配置axios
 Vue.component('view-box', ViewBox)
 Vue.component('group', Group)
@@ -29,6 +54,12 @@ Vue.component('x-img', XImg)
 Vue.component('x-button', XButton)
 Vue.component('panel', Panel)
 Vue.component('toast', Toast)
+Vue.component('sticky', Sticky)
+Vue.component('tab', Tab)
+Vue.component('tab-item', TabItem)
+Vue.component('cell-box', CellBox)
+Vue.component('rater', Rater)
+Vue.component('badge', Badge)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

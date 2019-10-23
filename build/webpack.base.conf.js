@@ -37,13 +37,20 @@ const webpackConfig = {
         options: vueLoaderConfig
       },
       {
-				test: /\.css$/,
-				use:['style-loader','css-loader']
-			},
-      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+      },
+      {
+        test: /\.less$/,
+        loader: "style-loader!css-loader!less-loader",
+      },
+      {
+        test: /\.css$/,
+        include: [
+          /src/
+        ],
+        loader: 'style-loader!css-loader'
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

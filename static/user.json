@@ -2,7 +2,7 @@
 	"code": 200,
 	"msg": "成功!",
 	"result": [{
-		"name": "菜单1",
+		"name": "现烤面包",
 	    "title": "标题",
 	    "tag":"phone",
 	    "category":[{
@@ -11,16 +11,21 @@
 	    	}
 	    }],
 	    "items":[{
-	    	"title":"图片1"
+			"title":"图片1",
+			"price":"32",
+			"discount":"9"
 	    },{
-	    	"title":"图片2"
+			"title":"图片2",
+			"price":"32"
 	    },{
-	    	"title":"图片3"
+			"title":"图片3",
+			"price":"662"
 	    },{
-	    	"title":"图片4"
+			"title":"图片4",
+			"price":"12"
 	    }]
 	},{
-		"name": "菜单2",
+		"name": "鲜制饮品",
 	    "title": "标题3",
 	    "tag":"phone",
 	    "category":[{
@@ -29,16 +34,20 @@
 	    	}
 	    }],
 	    "items":[{
-	    	"title":"图片1"
+			"title":"图片1",
+			"price":"12"
 	    },{
-	    	"title":"图片2"
+			"title":"图片2",
+			"price":"12"
 	    },{
-	    	"title":"图片3"
+			"title":"图片3",
+			"price":"12"
 	    },{
-	    	"title":"图片4"
+			"title":"图片4",
+			"price":"12"
 	    }]
 	},{
-		"name": "菜单2",
+		"name": "生日蛋糕",
 	    "title": "标题3",
 	    "tag":"phone",
 	    "category":[{
@@ -47,16 +56,20 @@
 	    	}
 	    }],
 	    "items":[{
-	    	"title":"图片1"
+	    	"title":"图片1",
+			"price":"12"
 	    },{
-	    	"title":"图片2"
+	    	"title":"图片2",
+			"price":"12"
 	    },{
-	    	"title":"图片3"
+	    	"title":"图片3",
+			"price":"12"
 	    },{
-	    	"title":"图片4"
+	    	"title":"图片4",
+			"price":"12"
 	    }]
 	},{
-		"name": "菜单2",
+		"name": "零加优食",
 	    "title": "标题3",
 	    "tag":"phone",
 	    "category":[{
@@ -65,13 +78,39 @@
 	    	}
 	    }],
 	    "items":[{
-	    	"title":"图片1"
+	    	"title":"图片1",
+			"price":"12"
 	    },{
-	    	"title":"图片2"
+	    	"title":"图片2",
+			"price":"12"
 	    },{
-	    	"title":"图片3"
+	    	"title":"图片3",
+			"price":"12"
 	    },{
-	    	"title":"图片4"
+	    	"title":"图片4",
+			"price":"12"
+	    }]
+	},{
+		"name": "中秋月饼",
+	    "title": "标题3",
+	    "tag":"phone",
+	    "category":[{
+	    	"icon":{
+	    		
+	    	}
+	    }],
+	    "items":[{
+	    	"title":"图片1",
+			"price":"12"
+	    },{
+	    	"title":"图片2",
+			"price":"12"
+	    },{
+	    	"title":"图片3",
+			"price":"12"
+	    },{
+	    	"title":"图片4",
+			"price":"12"
 	    }]
 	}]
 }

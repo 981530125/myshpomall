@@ -47,7 +47,8 @@ export default new Router({
       component: Home,
       meta: {
             title: '首页',   // 标题设置
-            isLogin: false
+            isLogin: false,
+            btnPermissions: ['admin','supper'] 
           }
     },
     {

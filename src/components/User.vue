@@ -24,17 +24,23 @@
         <ul ref="itemList" class="shops-ul" >
           <li class="shops-li" v-for="(goods, index1) in searchgoods" :key="index1">
             <div class="shops-title">
-              <h4>{{goods.name}}</h4>
+              <h3 style="letter-spacing: 2px;">{{goods.name}}</h3>
             </div>
-            <!--<ul class="phone-type" v-if="goods.tag === 'phone'">
+            <!-- <ul class="phone-type" v-if="goods.tag === 'phone'">
               <li v-for="(phone,index) in goods.category" :key="index">
                 <img :src="phone.icon" alt="">
               </li>
-            </ul>-->
+            </ul> -->
             <ul class="shops-items">
               <li v-for="(item, index2) in goods.items" :key="index2">
-                <img :src="require('../assets/images/03.jpg')" alt="">
-                <span>{{item.title}}</span>
+                <img :src="require('../assets/images/01.png')" alt="">
+                <div class="goods-title">
+                  <div class="goods-content">
+                    <span class="goods-content-title">{{item.title}}</span>
+                    <span class="goods-content-icon"><i class="iconfont icon-jia1 icon-style"></i></span>
+                  </div>
+                  <div class="goods-content-price"><span v-if="item.discount" style="color:#fa0000;font-weight:bold;font-size:18px;">￥{{item.discount}}</span><span :class="{isdeleted: item.discount}">￥{{item.price}}</span></div>
+                </div>
               </li>
             </ul>
           </li>
@@ -124,7 +130,7 @@ export default {
 				this._initBScroll();
 				//右边列表的高度
 				this._initRightHeight();
-				//设置右侧最小滚动高度，防止高度无法滚到最顶部12313
+				//设置右侧最小滚动高度，防止高度无法滚到最顶部
 				this.$refs.itemList.style.paddingBottom = this.$refs.shop.clientHeight-this.lastheight+'px'
 			})
 		},
@@ -162,8 +168,8 @@ export default {
       overflow: hidden;
  	}
   .menu-wrapper{
-    width: 80px;
-    flex: 0 0 80px;
+    width: 90px;
+    flex: 0 0 90px;
   }
   .menu-item{
   	width: 100%;
@@ -177,10 +183,11 @@ export default {
 	  position: relative;
   }
   .menu-item span{
-  	font-size: 14px;
+  	font-size: 18px;
   }
   .current{
-  	color: #e02e24;
+    color: #e02e24;
+    font-weight: bold;
     background: #ffffff;
   }
   .current::before{
@@ -219,8 +226,7 @@ export default {
   .shops-items li{
   	display: flex;
     flex-direction: column;
-    width: 33%;
-    height :3.73rem;
+    width: 100%;
     justify-content: center;
     align-items: center ;
   }
@@ -248,5 +254,39 @@ export default {
   }
   .phone-type img{
   	width: 70%;
+  }
+  .goods-title{
+    width: 94%;
+    margin-left: 6%;
+    height:80px;
+  }
+  .goods-content{
+    height:35px;
+    line-height:35px;
+    display:flex;
+  }
+  .goods-content-title{
+    font-size:16px;
+    flex:4;
+  }
+  .goods-content-icon{
+    flex:1;
+  }
+  .icon-style{
+    color:#d2b083;
+    font-size:28px
+  }
+  .goods-content-price{
+    text-align:left;
+    font-size:18px;
+    font-weight: bold;
+    height:25px;
+    line-height:25px;
+  }
+  .isdeleted{
+    margin-left: 10px;
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: line-through;
   }
 </style>
