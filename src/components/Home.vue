@@ -155,15 +155,6 @@ export default {
   	opengoodsdetail(){
 		this.$router.replace('/Goods/Goodsdetail')
   	}
-//	choosetype(){
-//		this.isshow = true;
-//	},
-//	hideview(){
-//		this.isshow = false;
-//	},
-//	choosegoodstype(n){
-//		this.activeindex = n;
-//	}
   }
 }
 </script>
